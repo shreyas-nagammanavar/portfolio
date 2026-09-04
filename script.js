@@ -16,8 +16,8 @@ document.querySelectorAll('.mobile-menu a').forEach(a => {
 const phrases = [
   'Full-Stack Developer',
   'Machine Learning Engineer',
-  'React + Flask Builder',
-  'End-to-End ML Systems',
+  'Blockchain Developer',
+  'Open to Internships & Collabs',
 ];
 let pi = 0, ci = 0, deleting = false;
 const el = document.getElementById('typed');
