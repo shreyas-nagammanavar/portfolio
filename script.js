@@ -35,7 +35,7 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.project-card, .skill-card, .stat, .cert-card, .contact-card, .timeline-item, .about-text, .about-avatar')
+document.querySelectorAll('.project-card, .skill-card, .stat, .cert-card, .contact-card, .timeline-item, .about-text, .about-avatar, .resume-card')
   .forEach(el => { el.classList.add('fade-in'); observer.observe(el); });
 
 // Skill bar animation
