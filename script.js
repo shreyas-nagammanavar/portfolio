@@ -15,9 +15,9 @@ document.querySelectorAll('.mobile-menu a').forEach(a => {
 // Typed effect
 const phrases = [
   'Full-Stack Developer',
-  'ML Engineer',
+  'Machine Learning Engineer',
   'React + Flask Builder',
-  'Open Source Enthusiast',
+  'End-to-End ML Systems',
 ];
 let pi = 0, ci = 0, deleting = false;
 const el = document.getElementById('typed');
