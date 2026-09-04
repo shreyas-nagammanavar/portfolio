@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shreyas N Nagammanavar — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="logo">&lt;SNN /&gt;</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="menu">&#9776;</button>
+    </div>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Shreyas N<br/><span class="accent">Nagammanavar</span></h1>
+        <p class="hero-tagline typed" id="typed"></p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/shreyas-nagammanavar" target="_blank" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/shreyas-nagammanavar-ab46433a7" target="_blank" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:shreyas31200418@gmail.com" title="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring">
+          <img src="dp.png" alt="Shreyas N Nagammanavar" class="hero-photo"/>
+        </div>
+        <div class="hero-photo-glow"></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-ring">
+            <img src="dp.png" alt="Shreyas N Nagammanavar" class="avatar-photo"/>
+          </div>
+          <div class="about-badges">
+            <span class="badge">Full-Stack Dev</span>
+            <span class="badge">ML Engineer</span>
+            <span class="badge">Open Source</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>Computer Science undergraduate with hands-on experience building <strong>full-stack</strong> and <strong>machine learning-powered</strong> web applications using React, Flask, and libraries such as Scikit-learn, XGBoost, and Pandas.</p>
+          <p>Skilled in developing end-to-end solutions spanning secure authentication (JWT, RBAC), REST APIs, and relational and NoSQL database design. Strong foundation in data structures, algorithms, and software engineering practices.</p>
+          <p>Track record of delivering functional, data-driven projects — including a <strong>fraud detection system</strong> processing 590K+ transactions and a <strong>recommendation engine</strong> serving 62K+ items.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">590K+</span><span class="stat-label">Transactions Processed</span></div>
+            <div class="stat"><span class="stat-num">62K+</span><span class="stat-label">Movies Indexed</span></div>
+            <div class="stat"><span class="stat-num">98%+</span><span class="stat-label">ROC-AUC Score</span></div>
+            <div class="stat"><span class="stat-num">18x</span><span class="stat-label">Memory Reduction</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Core Stack</h3>
+          <div class="tags">
+            <span>Python</span><span>Flask</span><span>React</span>
+            <span>MongoDB</span><span>MySQL</span><span>Docker</span>
+            <span>REST APIs</span><span>JWT Auth</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <h3>ML / Data</h3>
+          <div class="tags">
+            <span>XGBoost</span><span>Scikit-learn</span><span>Pandas</span>
+            <span>NumPy</span><span>SMOTE</span><span>Isolation Forest</span>
+            <span>Random Forest</span><span>TF-IDF</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools & More</h3>
+          <div class="tags">
+            <span>Java</span><span>C/C++</span><span>JavaScript</span>
+            <span>Nginx</span><span>Gunicorn</span><span>Git/GitHub</span>
+            <span>Tailwind CSS</span><span>Streamlit</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proficiency-bars">
+        <h3 class="bars-title">Proficiency</h3>
+        <div class="bar-item"><span>Python / Flask</span><div class="bar"><div class="bar-fill" data-w="92"></div></div><span class="pct">92%</span></div>
+        <div class="bar-item"><span>React / JS</span><div class="bar"><div class="bar-fill" data-w="82"></div></div><span class="pct">82%</span></div>
+        <div class="bar-item"><span>Machine Learning</span><div class="bar"><div class="bar-fill" data-w="85"></div></div><span class="pct">85%</span></div>
+        <div class="bar-item"><span>Docker / DevOps</span><div class="bar"><div class="bar-fill" data-w="75"></div></div><span class="pct">75%</span></div>
+        <div class="bar-item"><span>Databases (SQL/NoSQL)</span><div class="bar"><div class="bar-fill" data-w="80"></div></div><span class="pct">80%</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🛡️</span>
+            <div class="project-links">
+              <a href="https://github.com/shreyas-nagammanavar" target="_blank" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Credit Card Fraud Detection</h3>
+          <p>Production-grade fraud detection pipeline achieving <strong>98%+ ROC-AUC</strong> across 590K+ IEEE-CIS transactions using an XGBoost / Random Forest / Isolation Forest ensemble with SMOTE class balancing.</p>
+          <ul class="project-highlights">
+            <li>JWT authentication & RBAC across all Flask REST API endpoints</li>
+            <li>Full Docker containerization with Gunicorn/Nginx serving</li>
+            <li>Consistent local-to-production environment parity</li>
+          </ul>
+          <div class="project-tags">
+            <span>Python</span><span>XGBoost</span><span>Flask</span>
+            <span>Docker</span><span>JWT</span><span>SMOTE</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🎬</span>
+            <div class="project-links">
+              <a href="https://cinematch-3olx.onrender.com" target="_blank" title="Live Demo">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>CineMatch — Movie Recommender</h3>
+          <p>TF-IDF/Cosine Similarity recommendation engine for <strong>62K+ movies</strong> with an <strong>18x memory reduction</strong> (9GB → &lt;500MB) via sparse matrix operations, deployed live on Render.</p>
+          <ul class="project-highlights">
+            <li>Re-engineered for production on free-tier cloud hosting</li>
+            <li>Docker-based deployment with continuous availability</li>
+            <li>Sparse matrix operations for massive memory efficiency</li>
+          </ul>
+          <div class="project-tags">
+            <span>Python</span><span>TF-IDF</span><span>Scikit-learn</span>
+            <span>Docker</span><span>Render</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🌱</span>
+            <div class="project-links">
+              <a href="https://github.com/shreyas-nagammanavar" target="_blank" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>GrowRight — AI Kids Health Platform</h3>
+          <p>AI-powered nutrition guidance platform integrating <strong>Groq Llama 3</strong> for personalized, real-time dietary recommendations with a gamified React frontend for children.</p>
+          <ul class="project-highlights">
+            <li>Groq Llama 3 integration via Flask backend</li>
+            <li>Role-based admin dashboard backed by MongoDB</li>
+            <li>Gamified React frontend for child engagement</li>
+          </ul>
+          <div class="project-tags">
+            <span>React</span><span>Flask</span><span>MongoDB</span>
+            <span>Llama 3</span><span>RBAC</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & CERTS -->
+  <section id="education" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Education & <span class="accent">Certifications</span></h2>
+      <div class="edu-certs-grid">
+        <div class="edu-col">
+          <h3 class="col-heading">🎓 Education</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <h4>B.E. Computer Science & Engineering</h4>
+                <p class="tl-org">Jain College of Engineering & Technology</p>
+                <span class="tl-badge">CGPA: 8.30</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <h4>II PUC (Science)</h4>
+                <p class="tl-org">PC Jabin Science College</p>
+                <span class="tl-badge">87.83%</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <h4>SSLC</h4>
+                <p class="tl-org">SBIOAES English Medium School</p>
+                <span class="tl-badge">94.56%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cert-col">
+          <h3 class="col-heading">🏅 Certifications</h3>
+          <div class="cert-cards">
+            <div class="cert-card">
+              <span class="cert-icon">🥇</span>
+              <div>
+                <h4>Programming in Java</h4>
+                <p>NPTEL — Elite Gold</p>
+              </div>
+            </div>
+            <div class="cert-card">
+              <span class="cert-icon">📊</span>
+              <div>
+                <h4>Google Analytics GA4</h4>
+                <p>Google</p>
+              </div>
+            </div>
+            <div class="cert-card">
+              <span class="cert-icon">🐍</span>
+              <div>
+                <h4>Advanced Python</h4>
+                <p>Simplilearn</p>
+              </div>
+            </div>
+          </div>
+          <h3 class="col-heading" style="margin-top:2rem">🌐 Languages & Soft Skills</h3>
+          <div class="soft-skills">
+            <span>English (Fluent)</span><span>Kannada</span><span>Hindi</span>
+            <span>Problem Solving</span><span>Analytical Thinking</span>
+            <span>Leadership</span><span>Team Collaboration</span><span>Adaptability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="contact-sub">I'm open to full-time roles, internships, and interesting collaborations. Let's connect!</p>
+      <div class="contact-grid">
+        <a href="mailto:shreyas31200418@gmail.com" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <h4>Email</h4>
+          <p>shreyas31200418@gmail.com</p>
+        </a>
+        <a href="https://linkedin.com/in/shreyas-nagammanavar-ab46433a7" target="_blank" class="contact-card">
+          <span class="contact-icon">💼</span>
+          <h4>LinkedIn</h4>
+          <p>shreyas-nagammanavar</p>
+        </a>
+        <a href="https://github.com/shreyas-nagammanavar" target="_blank" class="contact-card">
+          <span class="contact-icon">🐙</span>
+          <h4>GitHub</h4>
+          <p>shreyas-nagammanavar</p>
+        </a>
+        <a href="tel:+917760537713" class="contact-card">
+          <span class="contact-icon">📞</span>
+          <h4>Phone</h4>
+          <p>+91 77605 37713</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & Built by <span class="accent">Shreyas N Nagammanavar</span></p>
+    <p class="footer-sub">© 2025 · All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
