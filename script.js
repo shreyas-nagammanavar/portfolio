@@ -38,20 +38,6 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.project-card, .skill-card, .stat, .cert-card, .contact-card, .timeline-item, .about-text, .about-avatar, .resume-card')
   .forEach(el => { el.classList.add('fade-in'); observer.observe(el); });
 
-// Skill bar animation
-const barObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.querySelectorAll('.bar-fill').forEach(bar => {
-        bar.style.width = bar.dataset.w + '%';
-      });
-      barObserver.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.3 });
-
-const barsSection = document.querySelector('.proficiency-bars');
-if (barsSection) barObserver.observe(barsSection);
 
 // Active nav link highlight
 const sections = document.querySelectorAll('section[id]');
