@@ -292,7 +292,7 @@ body {
 .tags span:hover, .soft-skills span:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
 /* ── PROJECTS ── */
 .projects-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 .project-card {
@@ -509,7 +509,7 @@ footer .accent {
   .skills-grid, .projects-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr 1fr; }
   .about-stats { grid-template-columns: 1fr 1fr; }
-  .skills-grid { grid-template-columns: 1fr 1fr; }
+  .skills-grid, .projects-grid { grid-template-columns: 1fr; }
   .resume-card { padding: 1.5rem; }
   .resume-card-left { flex-direction: column; }
   .resume-card-actions { flex-direction: column; }
