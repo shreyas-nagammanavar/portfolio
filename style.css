@@ -224,12 +224,9 @@ body {
 }
 
 /* ── ABOUT ── */
-.about-grid {
-  display: grid; grid-template-columns: auto 1fr;
-  gap: 2rem 3rem; align-items: start;
-}
-.about-badges-col { display: flex; align-items: flex-start; padding-top: .25rem; }
-.about-badges { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: flex-start; }
+.about-grid { display: flex; flex-direction: column; gap: 1.5rem; }
+.about-badges-col { display: flex; }
+.about-badges { display: flex; flex-wrap: wrap; gap: .5rem; }
 .badge {
   padding: .3rem .8rem; border-radius: 20px;
   background: var(--accent-light); border: 1px solid var(--border-accent);
