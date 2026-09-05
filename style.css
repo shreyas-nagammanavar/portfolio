@@ -225,24 +225,11 @@ body {
 
 /* ── ABOUT ── */
 .about-grid {
-  display: grid; grid-template-columns: 280px 1fr;
-  gap: 4rem; align-items: start;
+  display: grid; grid-template-columns: auto 1fr;
+  gap: 2rem 3rem; align-items: start;
 }
-.about-avatar { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
-.avatar-ring {
-  width: 180px; height: 180px; border-radius: 50%;
-  padding: 3px;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
-  box-shadow: 0 4px 24px rgba(59,91,219,.2);
-  overflow: hidden;
-}
-.avatar-photo {
-  width: 100%; height: 100%; border-radius: 50%;
-  object-fit: cover; object-position: top;
-  display: block;
-  border: 3px solid var(--surface);
-}
-.about-badges { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; }
+.about-badges-col { display: flex; align-items: flex-start; padding-top: .25rem; }
+.about-badges { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: flex-start; }
 .badge {
   padding: .3rem .8rem; border-radius: 20px;
   background: var(--accent-light); border: 1px solid var(--border-accent);
@@ -492,7 +479,6 @@ footer .accent {
 @media (max-width: 900px) {
   .skills-grid, .projects-grid { grid-template-columns: 1fr 1fr; }
   .about-grid { grid-template-columns: 1fr; }
-  .about-avatar { flex-direction: row; flex-wrap: wrap; }
   .edu-certs-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-inner { flex-direction: column-reverse; text-align: center; gap: 2.5rem; }
